@@ -5,6 +5,7 @@ import java.util.Date;
 
 @Entity
 //@Table(name="Person") Not needed, class and table names are equal
+@NamedQuery(name="find_all_persons", query="select p from Person p")
 public class Person {
     @Id
     @GeneratedValue
